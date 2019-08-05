@@ -1,0 +1,53 @@
+.opening {
+  position: relative;
+  width: 16em;
+  font-size: 200%;
+  font-weight: 400;
+  margin: 20% auto;
+  color: #4ee;
+  opacity: 0;
+  z-index: 1;
+  animation: intro 2s ease-out;
+  &__titles {
+    position: absolute;
+    width: 18em;
+    height: 50em;
+    bottom: 25%;
+    left: 50%;
+    margin-left: -9em;
+    font-size: 295%;
+    font-weight: bold;
+    text-align: justify;
+    overflow: hidden;
+    transform-origin: 50% 100%;
+    transform: perspective(300px) rotateX(15deg);
+    &:after {
+      position: absolute;
+      content: " ";
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 60%;
+      pointer-events: none;
+    }
+  }
+  &__logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25%;
+    margin: auto;
+    opacity: 0;
+    z-index: 1;
+    animation: logo 3s ease-out 2.5s;
+    img {
+      width: 100%;
+    }
+  }
+  &__contents {
+    position: absolute;
+    top: 100%;
+    opacity: 0;
+    animation: scroll 50s linear 4s forwards;
+  }
+}
