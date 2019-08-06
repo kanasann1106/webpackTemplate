@@ -80,13 +80,7 @@ module.exports = (env, argv) => ({
                 ]
               }
             },
-            {
-              loader: 'sass-loader',
-              options: {
-                // ソースマップの利用有無
-                sourceMap: true
-              }
-            }
+            'sass-loader'
           ]
         })
       }
