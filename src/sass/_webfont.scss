@@ -1,0 +1,21 @@
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  src: url("../assets/webfonts/fa-brands-400.eot");
+  src: url("../assets/webfonts/fa-brands-400.eot?#iefix"),
+  url("../assets/webfonts/fa-brands-400.woff2"),
+  url("../assets/webfonts/fa-brands-400.woff"),
+  url("../assets/webfonts/fa-brands-400.ttf"),
+  url("../assets/webfonts/fa-brands-400.svg#fontawesome");
+}
+.instagram {
+  &::before {
+    content: '\f16d';
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Font Awesome 5 Brands', sans-serif;
+  }
+}
