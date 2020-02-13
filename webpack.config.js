@@ -47,10 +47,12 @@ const app = {
         test: /\.js?$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
-      },
-      {
-        test: /\.ts$/,
-        use: 'ts-loader',
+        options: {
+          presets: [
+            // プリセットを指定することで、ES2020 を ES5 に変換
+            '@babel/preset-env',
+          ]
+        }
       },
       {
         test: /\.scss$/,
@@ -116,7 +118,7 @@ const app = {
     ],
   },
   resolve: {
-    extensions: ['.js', '.ts'],
+    extensions: ['.js'],
   },
   devtool: 'source-map',
   plugins: [

@@ -19,7 +19,6 @@ npm run build
 
 - webpackでbundle
     - ES6(@babel/polyfill(async/await対応))
-    - TypeScript
     - Sass
     - autoprefixerを自動生成
     - productionモードでcss/jsファイル圧縮
@@ -29,6 +28,7 @@ npm run build
     - jQueryに依存したライブラリに対応
 - npm scriptsでタスクランナー
 - jQuery
+- Bootstrap
 - font「NotoSansJP」設定
 - fontawesomeのcssをnode_modulesで管理
 - pugでHTMLコーディング

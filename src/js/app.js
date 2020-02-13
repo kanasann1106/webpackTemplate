@@ -1,4 +1,2 @@
-"use strict";
-var test = 'Hello World';
-console.log(test);
-//# sourceMappingURL=app.js.map
+import 'bootstrap';
+import '../sass/style.scss';
